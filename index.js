@@ -2,17 +2,23 @@ function checkCredentials() {
     const username = prompt("Enter username:");
     const password = prompt("Enter password:");
 
-    // Static username and password
-    const correctUsername = "Marty";
-    const correctPassword = "Bttf88";
-
-    // Check if username and password are correct
-    if (username === correctUsername && password === correctPassword) {
-        alert("Great Scott! You're in!");
-        // Set the authenticated flag in local storage
-        localStorage.setItem("authenticated", "true");
-        window.location.href = "home.html"; // Redirect to home.html after successful login
-    } else {
-        alert("Whoa, Doc! Incorrect credentials!");
-    }
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("Great Scott! You're in!");
+            window.location.href = "home.html"; // Redirect on successful login
+        } else {
+            alert("Whoa, Doc! Incorrect credentials!");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
