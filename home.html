@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <script>
+        // Check if the user is authenticated
+        document.addEventListener("DOMContentLoaded", function() {
+            const isAuthenticated = localStorage.getItem("authenticated");
+            
+            // If not authenticated, redirect to the login page or deny access
+            if (isAuthenticated !== "true") {
+                alert("Access Denied! You are not authorized to view this page.");
+                window.location.href = "index.html"; // Redirect to login page
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Protected Content</h1>
+    <p>This page is only accessible after successful login!</p>
+</body>
+</html>
