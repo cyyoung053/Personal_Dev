@@ -4,7 +4,7 @@ function checkCredentials() {
 
     // Static username and password
     const correctUsername = "marty";
-    const correctPassword = "fluxcapacitor88";
+    const correctPassword = "bttf88";
 
     // Check if username and password are correct
     if (username === correctUsername && password === correctPassword) {
