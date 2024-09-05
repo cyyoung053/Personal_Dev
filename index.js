@@ -3,8 +3,8 @@ function checkCredentials() {
     const password = prompt("Enter password:");
 
     // Static username and password
-    const correctUsername = "marty";
-    const correctPassword = "bttf88";
+    const correctUsername = "Marty";
+    const correctPassword = "Bttf88";
 
     // Check if username and password are correct
     if (username === correctUsername && password === correctPassword) {
