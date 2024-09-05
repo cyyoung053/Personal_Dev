@@ -11,88 +11,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .container {
     text-align: center;
-    max-width: 960px;
-    padding: 20px;
 }
 
 .header {
     background-color: #FF1493;
-    padding: 20px;
+    padding: 40px;
     border-bottom: 4px solid #00FF00;
+    box-shadow: 0px 0px 15px #00FF00;
 }
 
 .header h1 {
     font-size: 3em;
     color: yellow;
     text-shadow: 2px 2px 0px black;
-}
-
-.content {
-    margin-top: 40px;
-}
-
-.intro {
-    margin-bottom: 40px;
-}
-
-.intro h2 {
-    font-size: 2.5em;
-    color: #00FFFF;
-}
-
-.intro p {
-    font-size: 1.5em;
-    color: white;
-}
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #8A2BE2;
-    border-radius: 10px;
-    box-shadow: 0 0 20px yellow;
-}
-
-.feature {
-    width: 30%;
-}
-
-.feature h3 {
-    font-size: 1.8em;
-    color: #FF4500;
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 1.2em;
-    color: white;
-}
-
-.footer {
-    margin-top: 40px;
-    padding: 10px;
-    background-color: #00FF00;
-    border-top: 4px solid yellow;
-}
-
-.footer p {
-    color: black;
-    font-size: 1.2em;
-}
-
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-    }
-    
-    .feature {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }
