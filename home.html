@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Page</title>
-    <script>
-        // Check if the user is authenticated
-        document.addEventListener("DOMContentLoaded", function() {
-            const isAuthenticated = localStorage.getItem("authenticated");
-            
-            // If not authenticated, redirect to the login page or deny access
-            if (isAuthenticated !== "true") {
-                alert("Access Denied! You are not authorized to view this page.");
-                window.location.href = "index.html"; // Redirect to login page
-            }
-        });
-    </script>
+    <title>Chat</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <h1>Protected Content</h1>
-    <p>This page is only accessible after successful login!</p>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Conversation History</h2>
+            <ul id="conversationList">
+                <!-- Conversation history will be tracked here -->
+            </ul>
+        </div>
+
+        <div class="chatbox">
+            <button id="newChatButton">Create New Chat</button> <!-- Move button here -->
+
+            <div id="chatWindow">
+                <!-- Chat messages will appear here -->
+            </div>
+
+            <div class="input-box">
+                <textarea id="userInput" placeholder="Type your message..."></textarea>
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
 </body>
 </html>
