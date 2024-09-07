@@ -30,3 +30,7 @@ body {
     color: yellow;
     text-shadow: 2px 2px 0px black;
 }
+
+h1 {
+    margin: 2em 0;
+  }
