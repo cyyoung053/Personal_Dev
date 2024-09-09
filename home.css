@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Styling for the header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    position: relative;
+}
+
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    font-size: 24px; 
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+/* Menu Dropdown */
+.menu {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Adjust top to align with the bottom of the header */
+    left: 0;
+    width: 16.66%; /* 1/6th of the screen */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+/* Fun section styling */
+.fun-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.fun-section h2 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%; /* On smaller screens, the menu takes full width */
+    }
+}
