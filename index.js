@@ -1,6 +1,6 @@
 var oktaConfig = {
   issuer: "https://dev-81242508.okta.com/oauth2/default",  // Ensure you use the correct issuer
-  redirectUri: 'https://www.testingsite.me/index.html',  // Correct URL for your redirection
+  redirectUri: 'https://www.testingsite.me/',  // Correct URL for your redirection
   clientId: "0oajhtgg4xuXjf6Ja5d7"
 };
 
