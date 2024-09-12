@@ -8,9 +8,9 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 
 function logout() {
-        localStorage.removeItem('accessToken'); // Clear access token
-        localStorage.removeItem('idToken'); // Clear ID token
-        window.location.replace('index.html'); // Redirect to login page
+    localStorage.removeItem('accessToken'); // Clear access token
+    localStorage.removeItem('idToken'); // Clear ID token
+    window.location.replace('index.html'); // Redirect to login page
 }
 
 document.addEventListener('DOMContentLoaded', function() {

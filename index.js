@@ -16,6 +16,7 @@ oktaSignIn.authClient.token.getUserInfo().then(function(user) {
   oktaSignIn.authClient.tokenManager.setTokens(tokens);
   localStorage.setItem('accessToken', tokens.accessToken.accessToken); // Save access token
   localStorage.setItem('idToken', tokens.idToken.idToken); // Save ID token
+  window.oktaSignIn = oktaSignIn;
 
     // Redirect to new page after successful login
     window.location.replace('home.html');
@@ -24,8 +25,3 @@ oktaSignIn.authClient.token.getUserInfo().then(function(user) {
     console.error(err);
   });
 });
-
-function logout() {
-  oktaSignIn.authClient.signOut();
-  location.reload();
-}
