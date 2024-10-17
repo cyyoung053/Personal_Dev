@@ -1,4 +1,4 @@
-const apiUrl = "https://personaloai.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2023-03-15-preview";;;
+const apiUrl = "https://personaloai.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2023-03-15-preview";
 const secretKey = "55acac26467a4b2f8c33f7e3e55922e4";
 
 let conversationHistory = []; // To store the history of conversations
